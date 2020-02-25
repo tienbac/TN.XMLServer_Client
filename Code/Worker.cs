@@ -58,7 +58,8 @@ namespace TN.XMLServer_Client.Code
                 Thread thread1 = new Thread(Send);
                 thread1.Start();
             }
-            byte[] bytes = new byte[4086];
+
+            byte[] bytes = new byte[512];
             while (true)
             {
                 var byteCount = socket.Receive(bytes, SocketFlags.None);
@@ -87,6 +88,7 @@ namespace TN.XMLServer_Client.Code
                         Debug.WriteLine(mess);
                         Debug.WriteLine("");
                     }
+                    Utilities.WriteOperationLog("", mess);
                 }
 
             }
