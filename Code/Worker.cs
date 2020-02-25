@@ -15,7 +15,8 @@ namespace TN.XMLServer_Client.Code
     {
         static ASCIIEncoding encoding = new ASCIIEncoding();
         static Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-        byte[] msg = Encoding.UTF8.GetBytes("<CitiEvent Type=\"LIFESIG\"><LIFESIG PeriodSec=\"30\" TimeOutSec=\"60\" /></CitiEvent>");
+        private static string m = "<CitiEvent Type=\"LIFESIG\"><LIFESIG PeriodSec=\"30\" TimeOutSec=\"60\" /></CitiEvent>";
+        byte[] msg = Encoding.UTF8.GetBytes(m);
         public void Connect()
         {
             string host = "127.0.0.1";
@@ -75,8 +76,17 @@ namespace TN.XMLServer_Client.Code
                     //        Debug.WriteLine($"CitiEvent Alams Type : " + citiEvent.Alarm.Type);
                     //    }
                     //}
-                    Debug.WriteLine(mess);
-                    Debug.WriteLine("");
+                    if (mess.Contains(m))
+                    {
+                        mess.Replace(m, "");
+                        Debug.WriteLine(mess);
+                        Debug.WriteLine("");
+                    }
+                    else
+                    {
+                        Debug.WriteLine(mess);
+                        Debug.WriteLine("");
+                    }
                 }
 
             }
@@ -110,4 +120,5 @@ namespace TN.XMLServer_Client.Code
             }
         }
     }
+
 }
