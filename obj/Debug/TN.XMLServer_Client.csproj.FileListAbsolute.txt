@@ -1,0 +1,9 @@
+D:\Documents\TRINAM\TN.XMLServer_Client\bin\Debug\TN.XMLServer_Client.exe.config
+D:\Documents\TRINAM\TN.XMLServer_Client\bin\Debug\TN.XMLServer_Client.exe
+D:\Documents\TRINAM\TN.XMLServer_Client\bin\Debug\TN.XMLServer_Client.pdb
+D:\Documents\TRINAM\TN.XMLServer_Client\obj\Debug\TN.XMLServer_Client.csprojAssemblyReference.cache
+D:\Documents\TRINAM\TN.XMLServer_Client\obj\Debug\TN.XMLServer_Client.Form1.resources
+D:\Documents\TRINAM\TN.XMLServer_Client\obj\Debug\TN.XMLServer_Client.Properties.Resources.resources
+D:\Documents\TRINAM\TN.XMLServer_Client\obj\Debug\TN.XMLServer_Client.csproj.GenerateResource.cache
+D:\Documents\TRINAM\TN.XMLServer_Client\obj\Debug\TN.XMLServer_Client.exe
+D:\Documents\TRINAM\TN.XMLServer_Client\obj\Debug\TN.XMLServer_Client.pdb
